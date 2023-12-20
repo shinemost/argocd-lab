@@ -14,7 +14,7 @@ spec:
        app: myapp
    spec:
      containers:
-     - image: supertain147/grpc-server:v1.6
+     - image: supertain147/grpc-server:v2.0
        name: myapp 
        ports:
        - containerPort: 80
