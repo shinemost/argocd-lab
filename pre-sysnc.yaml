@@ -7,9 +7,10 @@ metadata:
    argocd.argoproj.io/hook: PreSync
 spec:
  template: 
-   containers: 
-   - name: sleep
-     image: alpine:latest 
-     command: ["echo", "pre-sync"] 
-   restartPolicy: Never 
+   spec: 
+     containers: 
+     - name: sleep
+       image: alpine:latest 
+       command: ["echo", "pre-sync"] 
+     restartPolicy: Never 
  backoffLimit: 0
