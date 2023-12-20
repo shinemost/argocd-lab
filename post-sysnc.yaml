@@ -17,7 +17,7 @@ spec:
           - "-H"
           - "'Content-type: application/json'"
           - "--data"
-          - "{\"channel\": \"#认真学习小组\", \"username\": \"hello\", \"text\": \"App Sync succeeded\", \"icon_emoji\": \":ghost:\"}"
-          - "https://hooks.slack.com/services/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"
+          - "'{\"text\": \"App Sync succeeded!\"}'"
+          - "https://hooks.slack.com/services/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"
       restartPolicy: Never
   backoffLimit: 2
