@@ -16,6 +16,6 @@ spec:
           - "POST"
           - "--data-urlencode"
           - "payload={\"channel\": \"#认真学习小组\", \"username\": \"hello\", \"text\": \"App Sync succeeded\", \"icon_emoji\": \":ghost:\"}"
-          - "https://hooks.slack.com/services/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"
+          - "https://hooks.slack.com/services/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"
       restartPolicy: Never
   backoffLimit: 2
