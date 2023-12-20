@@ -15,9 +15,9 @@ spec:
           - "-X"
           - "POST"
           - "-H"
-          - "'Content-type: application/json'"
+          - "\'Content-type: application/json\'"
           - "--data"
-          - "'{\"text\": \"App Sync succeeded!\"}'"
-          - "https://hooks.slack.com/services/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"
+          - "\'{\"text\": \"App Sync succeeded!\"}\'"
+          - "https://hooks.slack.com/services/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"
       restartPolicy: Never
   backoffLimit: 2
