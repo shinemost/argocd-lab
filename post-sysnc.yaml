@@ -14,8 +14,10 @@ spec:
           - "curl"
           - "-X"
           - "POST"
-          - "--data-urlencode"
-          - "payload={\"channel\": \"#认真学习小组\", \"username\": \"hello\", \"text\": \"App Sync succeeded\", \"icon_emoji\": \":ghost:\"}"
-          - "https://hooks.slack.com/services/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"
+          - "-H"
+          - "'Content-type: application/json'"
+          - "--data"
+          - "{\"channel\": \"#认真学习小组\", \"username\": \"hello\", \"text\": \"App Sync succeeded\", \"icon_emoji\": \":ghost:\"}"
+          - "https://hooks.slack.com/services/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"
       restartPolicy: Never
   backoffLimit: 2
