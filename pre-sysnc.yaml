@@ -1,0 +1,15 @@
+# myapp-service.yaml 
+apiVersion: batch/v1
+kind: Job 
+metadata:
+ name: before
+ annotations: 
+   argocd.argoproj.io/hook: PreSync
+spec:
+ template: 
+   containers: 
+   - name: sleep
+     image: alpine:latest 
+     command: ["echo", "pre-sync"] 
+   restartPolicy: Never 
+ backoffLimit: 0
