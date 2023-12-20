@@ -4,7 +4,6 @@ metadata:
   generateName: app-slack-notification-
   annotations:
     argocd.argoproj.io/hook: PostSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   template:
     spec:
@@ -16,7 +15,7 @@ spec:
           - "-X"
           - "POST"
           - "--data-urlencode"
-          - "payload={\"channel\": \"#xxx\", \"username\": \"hello\", \"text\": \"App Sync succeeded\", \"icon_emoji\": \":ghost:\"}"
-          - "https://hooks.slack.com/services/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"
+          - "payload={\"channel\": \"#认真学习小组\", \"username\": \"hello\", \"text\": \"App Sync succeeded\", \"icon_emoji\": \":ghost:\"}"
+          - "https://hooks.slack.com/services/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"
       restartPolicy: Never
   backoffLimit: 2
